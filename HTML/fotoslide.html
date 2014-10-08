@@ -1,0 +1,95 @@
+<html>
+<head>
+	<script type="text/javascript">
+
+		var image1=new Image()
+		image1.src="A.jpg"
+		var image2=new Image()
+		image2.src="A1.jpg"
+		var image3=new Image()
+		image3.src="A2.jpg"
+		var image4=new Image()
+        	image4.src="A3.jpg"
+        	var image5=new Image()
+        	image5.src="A4.jpg"
+        	var image6=new Image()
+        	image6.src="A5.jpg"
+        	var image7=new Image()
+        	image7.src="A6.jpg"
+        	var image8=new Image()
+        	image8.src="A7.jpg"
+        	var image9=new Image()
+        	image9.src="A8.jpg"
+        	var image10=new Image()
+        	image10.src="A9.jpg"
+        	var image11=new Image()
+        	image11.src="A10.jpg"
+        	var image12=new Image()
+        	image12.src="A11.jpg"
+        	var image13=new Image()
+        	image13.src="A12.jpg"
+        	var image14=new Image()
+        	image14.src="A13.jpg"
+
+	</script>
+
+</head>
+<body>
+	<script type="text/javascript">
+
+		var step=1
+		var whichimage=1
+		function slideit(){
+		if (!document.images)
+		return
+		document.images.slide.src=eval("image"+step+".src")
+		whichimage=step
+		if (step<14)
+		step++
+		else
+		step=1 
+		setTimeout("slideit()",1800)
+        }
+</script>
+
+
+                <img src="A.jpg" name="slide" border="0" width="1180" height="580"/>
+
+
+
+<script>		
+		slideit()
+		function slidelink(){
+		if (whichimage==1)
+		window.location="link1.htm" 
+		else if (whichimage==2)
+		window.location="link2.htm"
+		else if (whichimage==3)
+		window.location="link3.htm"
+		else if (whichimage==4)
+        	window.location="link4.htm"
+		else if (whichimage==5)
+                window.location="link5.htm"
+		else if (whichimage==6)
+        	window.location="link6.htm"
+		else if (whichimage==7)
+                window.location="link7.htm"
+	        else if (whichimage==8)
+                window.location="link8.htm"
+		else if (whichimage==9)
+        	window.location="link9.htm"
+		else if (whichimage==10)
+        	window.location="link10.htm"
+        	else if (whichimage==11)
+        	window.location="link11.htm"
+        	else if (whichimage==12)
+        	window.location="link12.htm"
+        	else if (whichimage==13)
+        	window.location="link13.htm"
+        	else if (whichimage==14)
+        	window.location="link14.htm"
+}
+</script>
+		<br>
+</body>
+</html>

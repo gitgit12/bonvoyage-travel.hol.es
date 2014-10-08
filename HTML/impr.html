@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+	 <meta charset="utf-8">
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script> 
+$(document).ready(function(){
+  $("#flip").click(function(){
+    $("#panel").slideToggle("slow");
+  });
+});
+</script>
+<style> 
+#panel,#flip
+{
+padding:1px;
+text-align:center;
+background-color:blue;
+border:solid 1px #c3a5b1;
+}
+
+#panel
+{
+padding:55px;
+display:none;
+
+} 
+
+</style>
+</head>
+<body>
+ 
+<div id="flip">ԵՐԿՐՆԵՐԻ ՑԱՆԿ </div>
+<div id="panel">ԵՎՐՈՊԱԿԱՆ ԵՐԿՐՆԵՐ<br><br>1.ՖՐԱՆՍԻԱ՝<br>2.ԱՆԳԼԻԱ՝<br> 3.ԻՏԱԼԻԱ՝<br> 4.ԻՍՊԱՆԻԱ՝<br> 5.ԳԵՐՄԱՆԻԱ՝<br>6.ՀՈՒՆԱՍՏԱՆ՝<br> <br>ԱՐԱԲԱԿԱՆ ԵՐԿՐՆԵՐ<br><br>1.ՄԱՐՈԿԿՈ՝ <br>2.ԵԳԻՊՏՈՍ՝<br> 3.ԱՄԷ՝<br><br>ԱՍԻԱԿԱՆ ԵՐԿՐՆԵՐ<br>1.ՎՐԱՍՏԱՆ<br> 2.ՄԱԼԴԻՎՆԵՐ՝ <br>3.ԹԱԻԼԱՆԴ՝<br></div><br>
+</body>
+</html>
+
